@@ -84,6 +84,16 @@ body {
   text-shadow: 0 0 2px rgba(31, 240, 66, 0.75);
   line-height: 1;
   margin-bottom: 0.75em;
+  animation: txtanimation 5s ease-in-out infinite;
+  text-transform: uppercase;
+}
+@keyframes txtanimation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		filter: blur(1px);
+	}
 }
 .terminal .prompt:before {
   content: '> ';
@@ -143,7 +153,6 @@ pre:before {
 <div class="container">
   <div class="terminal">
       <p class="prompt">The page you requested cannot be found right meow.</p>
-
   </div>
 </div>
 </body></html>
